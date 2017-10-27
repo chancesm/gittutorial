@@ -14,7 +14,7 @@ app.use(express.static('assets')); // Allows access to inner folders by appendin
 
 app.get('/', function (req, res){
 	control.getData(req).then(function (quoteData){
-		console.log(quoteData);
+		//console.log(quoteData);
 		res.render('index', quoteData);
 	})
 });

@@ -4,7 +4,7 @@ var Quotes = require('../model/quote')
 exports.getData = function (req){
 	return Quotes.all({raw:true})
 	.then(function (results){
-		console.log("RESULTS:",results);
+		//console.log("RESULTS:",results);
 		return {
 			Quotes: results
 		}
